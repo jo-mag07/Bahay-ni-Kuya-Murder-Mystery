@@ -1,0 +1,3 @@
+- [[Dining Area - Menu Display]]
+- [[Elevator Area - Menu Display]]
+- [[Sofa Area - Menu Display]]

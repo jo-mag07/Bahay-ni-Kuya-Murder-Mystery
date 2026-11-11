@@ -1,0 +1,7 @@
+• [[Riddle Registry]]
+• [[Living Room Riddles]]
+• [[Confession Room Riddles]]
+• [[Confession Room Riddles]]
+• [[Garden Riddles]]
+• [[Girls Bedroom Riddles]]
+• [[Boys Bedroom Riddles]]

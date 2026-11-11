@@ -1,0 +1,46 @@
+```
+
+flowchart TD
+    A([START GAME]) --> B[Display Game Introduction]
+    B --> C[/Enter Detective Name/]
+    C --> D[Initialize Game Data]
+    D --> E[Display Storyline and Suspect's Clue]
+    E --> F[Establish Objective: Find Kuya]
+    F --> G[Enter Living Room - RM-001]
+
+    G --> H{Choose an Option}
+
+    H -->|Investigate Sofa Area| I[Room Investigation Flow]
+    H -->|Investigate Dining Area| I
+    H -->|Investigate Elevator Area| I
+    H -->|Go To| J[Key and Location Flow]
+    H -->|Inventory| K[Display Inventory]
+    H -->|Exit| L{Confirm Exit?}
+
+    L -->|Yes| M([END GAME])
+    L -->|No| G
+    L -->|Cancel| G
+
+    I --> N[Return to Current Room Menu]
+    N --> O{Current Room}
+    O -->|Living Room| G
+    O -->|Other Room| P[Return to Previous Room Menu]
+
+    K --> G
+
+    J --> Q{Location Selected}
+    Q -->|Locked| G
+    Q -->|Accessible Room| R[Enter Selected Room]
+    R --> I
+    Q -->|Return| G
+
+    Q -->|Boys Bedroom Notebook Accessed| S[Activate Final Investigation Phase]
+    S --> T[Revisit Rooms and Review Evidence]
+    T --> U[Return to Garden]
+    U --> V[Final Investigation Flow]
+    V --> W([GAME OVER])
+
+```
+
+`Image:`
+![[mermaid-diagram (17).png]]
